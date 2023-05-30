@@ -60,6 +60,8 @@
 #include "modules/tone.h"
 #include "modules/fir.h"
 
+#include "modules/lowshelf.h"
+
 /** Noise Modules */
 #include "modules/clockednoise.h"
 #include "modules/dust.h"
