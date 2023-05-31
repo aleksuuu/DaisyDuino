@@ -35,9 +35,9 @@ class Lowshelf
     /** Sets resonance amount
         \param res : Set filter resonance.
     */
-    inline void SetRes(float res)
+    inline void SetQ(float qVal)
     {
-        res_ = res;
+        qVal_ = qVal;
         Reset();
     }
 
@@ -63,8 +63,8 @@ class Lowshelf
 
 
   private:
-    float sample_rate_, freq_, gain_, res_, b0_, b1_, b2_, a0_, a1_, a2_,
-        two_pi_d_sr_, xnm1_, xnm2_, ynm1_, ynm2_, z1_, z2_;
+    float sample_rate_, freq_, gain_, qVal_, b0_, b1_, b2_, a0_, a1_, a2_,
+        two_pi_d_sr_, xnm1_, xnm2_, ynm1_, ynm2_;
     void Reset();
 };
 } // namespace daisysp
